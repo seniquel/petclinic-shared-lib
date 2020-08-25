@@ -1,0 +1,6 @@
+<p>
+Compile et fais les tests maven et les poussent sur https://github.com/seniquel/spring-framework-petclinic.git. Exemple d'utilisation:
+</p>
+<pre>
+	mavenProject()
+</pre>
