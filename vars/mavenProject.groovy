@@ -36,10 +36,11 @@ def call () {
 		}
 		post {
 				success {
-					discordSend description: 'SUCCESS', footer: '', image: '', link: '', result: '', thumbnail: '', title: 'Léo est le meilleur', webhookURL: 'https://discordapp.com/api/webhooks/747819422705778738/dHWPHidlNLpiiKftWU84__Ss2LAkws77Swfdk5OWs22qla3hlI1B4zywW8ROg4nAwjRM'
+					discordSend description: 'SUCCESS', footer: '', image: '', link: '', result: 'success', thumbnail: '', title: 'Léo est le meilleur', webhookURL: 'https://discordapp.com/api/webhooks/747819422705778738/dHWPHidlNLpiiKftWU84__Ss2LAkws77Swfdk5OWs22qla3hlI1B4zywW8ROg4nAwjRM'
 					slackSend channel: 'jenkins-training', color: 'good', message: 'Léo success', tokenCredentialId: 'slack-token', teamDomain: 'devinstitut'
 				}
 				failure {
+									discordSend description: 'SUCCESS', footer: '', image: '', link: '', result: 'failure', thumbnail: '', title: 'Léo est le meilleur', webhookURL: 'https://discordapp.com/api/webhooks/747819422705778738/dHWPHidlNLpiiKftWU84__Ss2LAkws77Swfdk5OWs22qla3hlI1B4zywW8ROg4nAwjRM'
 				slackSend channel: 'jenkins-training', color: 'danger', message: 'Léo fail', tokenCredentialId: 'slack-token', teamDomain: 'devinstitut'
 						
 				}
